@@ -1,0 +1,94 @@
+<div class="max-w-2xl mx-auto px-4 pb-12">
+  <div class="bg-white border border-gray-300 rounded-lg p-6 sm:p-8 shadow-sm space-y-6">
+    <div class="text-center border-b pb-4">
+      <h1 class="text-2xl font-bold text-gray-900">Contacto</h1>
+      <p class="text-sm text-gray-500 mt-1">Formulario de contacto</p>
+    </div>
+
+    <div *ngIf="enviado" class="bg-green-50 border-2 border-green-500 text-green-800 p-4 rounded text-center">
+      <span class="block font-bold text-base mb-1">
+        Mensaje de confirmación: "¡Gracias por contactarnos!"
+      </span>
+      <span class="text-sm">
+        Hemos recibido tu mensaje correctamente. Nuestro equipo se pondrá en contacto a la brevedad.
+      </span>
+    </div>
+
+    <form (ngSubmit)="onSubmit()" class="space-y-5" noValidate>
+      <div>
+        <label class="block text-sm font-semibold text-gray-700 mb-1">
+          Nombre
+        </label>
+        <input
+          type="text"
+          [(ngModel)]="nombre"
+          name="nombre"
+          (input)="limpiarError('nombre')"
+          placeholder="Ingresa tu nombre completo"
+          [class.border-red-500]="errores.nombre"
+          [class.bg-red-50]="errores.nombre"
+          [class.border-gray-300]="!errores.nombre"
+          class="w-full border rounded px-3 py-2 text-sm focus:outline-none focus:border-blue-500"
+        />
+        <p *ngIf="errores.nombre" class="text-red-600 text-xs mt-1 font-medium">
+          {{ errores.nombre }}
+        </p>
+      </div>
+
+      <div>
+        <label class="block text-sm font-semibold text-gray-700 mb-1">
+          Correo electrónico
+        </label>
+        <input
+          type="email"
+          [(ngModel)]="correo"
+          name="correo"
+          (input)="limpiarError('correo')"
+          placeholder="ejemplo@correo.com"
+          [class.border-red-500]="errores.correo"
+          [class.bg-red-50]="errores.correo"
+          [class.border-gray-300]="!errores.correo"
+          class="w-full border rounded px-3 py-2 text-sm focus:outline-none focus:border-blue-500"
+        />
+        <p *ngIf="errores.correo" class="text-red-600 text-xs mt-1 font-medium">
+          {{ errores.correo }}
+        </p>
+      </div>
+
+      <div>
+        <label class="block text-sm font-semibold text-gray-700 mb-1">
+          Mensaje
+        </label>
+        <textarea
+          rows="5"
+          [(ngModel)]="mensaje"
+          name="mensaje"
+          (input)="limpiarError('mensaje')"
+          placeholder="Escribe aquí tu consulta o sugerencia sobre las noticias..."
+          [class.border-red-500]="errores.mensaje"
+          [class.bg-red-50]="errores.mensaje"
+          [class.border-gray-300]="!errores.mensaje"
+          class="w-full border rounded px-3 py-2 text-sm focus:outline-none focus:border-blue-500"
+        ></textarea>
+        <p *ngIf="errores.mensaje" class="text-red-600 text-xs mt-1 font-medium">
+          {{ errores.mensaje }}
+        </p>
+      </div>
+
+      <div class="pt-2">
+        <button
+          type="submit"
+          class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-2.5 rounded text-sm shadow transition-colors"
+        >
+          Enviar
+        </button>
+      </div>
+    </form>
+
+    <div class="bg-gray-50 border border-gray-200 rounded p-4 text-xs text-gray-600">
+      <p class="font-semibold text-gray-800 mb-1">Información de soporte:</p>
+      <p>Horario de atención: Lunes a Viernes de 8:00 a.m. a 6:00 p.m.</p>
+      <p>Correo de redacción: redaccion@noticiasweb.edu.co</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,75 @@
+<header class="bg-blue-600 text-white shadow-md sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex flex-col md:flex-row items-center justify-between gap-3">
+    <div
+      (click)="navegar('inicio')"
+      class="cursor-pointer text-xl md:text-2xl font-bold tracking-tight hover:opacity-90 transition-opacity"
+    >
+      Plataforma Web de Noticias
+    </div>
+
+    <nav class="flex items-center gap-1 sm:gap-2 flex-wrap justify-center">
+      <button
+        (click)="navegar('inicio')"
+        [class.bg-blue-800]="paginaActual === 'inicio'"
+        [class.text-white]="paginaActual === 'inicio'"
+        [class.shadow-inner]="paginaActual === 'inicio'"
+        [class.hover:bg-blue-700]="paginaActual !== 'inicio'"
+        [class.text-blue-50]="paginaActual !== 'inicio'"
+        class="px-3 py-1.5 rounded text-sm font-medium transition-colors"
+      >
+        Inicio
+      </button>
+
+      <button
+        (click)="navegar('noticias')"
+        [class.bg-blue-800]="paginaActual === 'noticias'"
+        [class.text-white]="paginaActual === 'noticias'"
+        [class.shadow-inner]="paginaActual === 'noticias'"
+        [class.hover:bg-blue-700]="paginaActual !== 'noticias'"
+        [class.text-blue-50]="paginaActual !== 'noticias'"
+        class="px-3 py-1.5 rounded text-sm font-medium transition-colors"
+      >
+        Noticias
+      </button>
+
+      <button
+        (click)="navegar('favoritos')"
+        [class.bg-blue-800]="paginaActual === 'favoritos'"
+        [class.text-white]="paginaActual === 'favoritos'"
+        [class.shadow-inner]="paginaActual === 'favoritos'"
+        [class.hover:bg-blue-700]="paginaActual !== 'favoritos'"
+        [class.text-blue-50]="paginaActual !== 'favoritos'"
+        class="px-3 py-1.5 rounded text-sm font-medium transition-colors flex items-center gap-1.5"
+      >
+        <span>Favoritos</span>
+        <span *ngIf="cantidadFavoritos > 0" class="bg-yellow-400 text-blue-950 font-bold text-xs px-1.5 py-0.5 rounded-full">
+          {{ cantidadFavoritos }}
+        </span>
+      </button>
+
+      <button
+        (click)="navegar('contacto')"
+        [class.bg-blue-800]="paginaActual === 'contacto'"
+        [class.text-white]="paginaActual === 'contacto'"
+        [class.shadow-inner]="paginaActual === 'contacto'"
+        [class.hover:bg-blue-700]="paginaActual !== 'contacto'"
+        [class.text-blue-50]="paginaActual !== 'contacto'"
+        class="px-3 py-1.5 rounded text-sm font-medium transition-colors"
+      >
+        Contacto
+      </button>
+
+      <button
+        (click)="navegar('acerca')"
+        [class.bg-blue-800]="paginaActual === 'acerca'"
+        [class.text-white]="paginaActual === 'acerca'"
+        [class.shadow-inner]="paginaActual === 'acerca'"
+        [class.hover:bg-blue-700]="paginaActual !== 'acerca'"
+        [class.text-blue-50]="paginaActual !== 'acerca'"
+        class="px-3 py-1.5 rounded text-sm font-medium transition-colors"
+      >
+        Acerca de
+      </button>
+    </nav>
+  </div>
+</header>

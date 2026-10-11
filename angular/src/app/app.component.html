@@ -1,0 +1,58 @@
+<div class="min-h-screen flex flex-col bg-gray-50 text-gray-900 font-sans antialiased">
+  <app-header
+    [paginaActual]="paginaActual"
+    [cantidadFavoritos]="favoritosIds.length"
+    (cambioPagina)="cambiarPagina($event)"
+  >
+  </app-header>
+
+  <main class="flex-1 py-6">
+    <app-home
+      *ngIf="paginaActual === 'inicio'"
+      [noticias]="noticias"
+      [favoritosIds]="favoritosIds"
+      (verDetalle)="verDetalle($event)"
+      (toggleFavorito)="onToggleFavorito($event)"
+      (cambioPagina)="cambiarPagina($event)"
+    >
+    </app-home>
+
+    <app-listado-noticias
+      *ngIf="paginaActual === 'noticias'"
+      [noticias]="noticias"
+      [favoritosIds]="favoritosIds"
+      (verDetalle)="verDetalle($event)"
+      (toggleFavorito)="onToggleFavorito($event)"
+      (crearNoticia)="onCrearNoticia($event)"
+      (eliminarNoticia)="onEliminarNoticia($event)"
+      (restablecerDatos)="onRestablecerDatos()"
+    >
+    </app-listado-noticias>
+
+    <app-detalle-noticia
+      *ngIf="paginaActual === 'detalle'"
+      [noticia]="noticiaSeleccionada"
+      [esFavorito]="esNoticiaFavorita(noticiaSeleccionada)"
+      (volver)="cambiarPagina('noticias')"
+      (toggleFavorito)="onToggleFavorito($event)"
+      (cambioPagina)="cambiarPagina($event)"
+    >
+    </app-detalle-noticia>
+
+    <app-favoritos
+      *ngIf="paginaActual === 'favoritos'"
+      [noticias]="noticias"
+      [favoritosIds]="favoritosIds"
+      (verDetalle)="verDetalle($event)"
+      (toggleFavorito)="onToggleFavorito($event)"
+      (cambioPagina)="cambiarPagina($event)"
+    >
+    </app-favoritos>
+
+    <app-contacto *ngIf="paginaActual === 'contacto'"></app-contacto>
+
+    <app-acerca-de *ngIf="paginaActual === 'acerca'"></app-acerca-de>
+  </main>
+
+  <app-footer (cambioPagina)="cambiarPagina($event)"></app-footer>
+</div>

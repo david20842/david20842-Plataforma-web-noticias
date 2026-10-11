@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "titulo": "Nuevas metodologías activas en la educación universitaria",
+    "categoria": "Educación",
+    "descripcion": "Universidades implementan el aprendizaje basado en retos para mejorar las habilidades de los estudiantes.",
+    "contenido": "Las instituciones de educación superior han comenzado a renovar sus planes de estudio integrando metodologías de aprendizaje basado en proyectos y resolución de problemas reales. De acuerdo con los directores de programas académicos, esta iniciativa busca que los futuros profesionales desarrollen habilidades blandas como el trabajo colaborativo, la comunicación efectiva y el pensamiento crítico frente a situaciones laborales concretas.",
+    "imagen": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80",
+    "fecha": "2026-08-15"
+  },
+  {
+    "id": 2,
+    "titulo": "Avances en conectividad y desarrollo de software web",
+    "categoria": "Tecnología",
+    "descripcion": "El incremento en el uso de herramientas modernas impulsa el desarrollo de aplicaciones más rápidas.",
+    "contenido": "El panorama del desarrollo web continúa evolucionando con la consolidación de nuevas herramientas frontend y protocolos de comunicación que reducen significativamente los tiempos de carga en navegadores web. Empresas del sector de tecnología señalan que la demanda de desarrolladores con conocimientos en interfaces dinámicas y consumo de datos estructurados ha aumentado en más de un 35% en el último año.",
+    "imagen": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
+    "fecha": "2026-08-18"
+  },
+  {
+    "id": 3,
+    "titulo": "El ecoturismo se consolida como alternativa de viaje sostenible",
+    "categoria": "Turismo",
+    "descripcion": "Viajeros prefieren destinos naturales que fomentan la preservación del medio ambiente.",
+    "contenido": "Durante los últimos meses se ha evidenciado una preferencia notable por destinos turísticos que promueven la conservación de los ecosistemas y el apoyo directo a comunidades locales. Parques naturales y reservas ecológicas han adaptado sus infraestructuras con senderos señalizados, alojamientos de bajo impacto ambiental y guías certificados con el propósito de generar conciencia ambiental en los visitantes.",
+    "imagen": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+    "fecha": "2026-08-20"
+  },
+  {
+    "id": 4,
+    "titulo": "Comercio electrónico impulsa las ventas en medianas empresas",
+    "categoria": "Comercio",
+    "descripcion": "La digitalización de catálogos y pagos seguros permite a pequeños negocios ampliar su mercado.",
+    "contenido": "La adopción de plataformas de comercio electrónico y pasarelas de pago digitales ha permitido a cientos de comerciantes tradicionales expandir su cobertura a nivel nacional. Especialistas en mercadeo digital destacan que contar con sitios web responsivos y catálogos de fácil navegación resulta fundamental para generar confianza y concretar ventas efectivas entre los clientes actuales.",
+    "imagen": "https://images.unsplash.com/photo-1556742049-0a67c5574f73?auto=format&fit=crop&w=800&q=80",
+    "fecha": "2026-08-22"
+  },
+  {
+    "id": 5,
+    "titulo": "Inteligencia colectiva y trabajo remoto en organizaciones",
+    "categoria": "Tecnología",
+    "descripcion": "Nuevas dinámicas laborales muestran la importancia de plataformas integradas de comunicación.",
+    "contenido": "Las dinámicas laborales modernas han demostrado que el trabajo a distancia requiere plataformas centralizadas de información y tableros colaborativos. Distintas empresas han reportado que la organización transparente de tareas y la comunicación asertiva reducen los tiempos de entrega en proyectos interdisciplinarios, beneficiando el bienestar general de los equipos de trabajo.",
+    "imagen": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80",
+    "fecha": "2026-08-25"
+  },
+  {
+    "id": 6,
+    "titulo": "Rutas gastronómicas regionales dinamizan la economía local",
+    "categoria": "Turismo",
+    "descripcion": "Iniciativas culinarias rescatan tradiciones ancestrales y atraen visitantes de todo el país.",
+    "contenido": "La recuperación de recetas autóctonas y el fomento de festivales gastronómicos locales se han convertido en un motor clave para la economía de diferentes regiones. Productores agrícolas, cocineros tradicionales y prestadores de servicios hoteleros han articulado esfuerzos para ofrecer experiencias culinarias auténticas que atraen tanto a turistas nacionales como a extranjeros.",
+    "imagen": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+    "fecha": "2026-08-27"
+  }
+]
