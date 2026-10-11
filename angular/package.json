@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build && (cp -r dist/plataforma-web-noticias/browser/* dist/plataforma-web-noticias/ 2>/dev/null || true)",
     "watch": "ng build --watch --configuration development"
   },
   "private": true,
